@@ -6,6 +6,8 @@
 import { BookOpen } from 'lucide-react';
 import Flashcard from './components/Flashcard';
 import { flashcards } from './data/flashcards';
+import DialogueFlashcardLesson from './components/DialogueFlashcardLesson';
+import ChineseLessonCard from './components/ChineseLessonCard';
 
 export default function App() {
   return (
@@ -26,7 +28,17 @@ export default function App() {
           </p>
         </section>
 
-        <section>
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-6">互動練習卡</h2>
+          <ChineseLessonCard />
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-6">對話練習單元</h2>
+          <DialogueFlashcardLesson />
+        </section>
+
+        <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-6">學習單元</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {flashcards.map((card) => (
