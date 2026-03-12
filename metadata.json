@@ -1,0 +1,7 @@
+{
+  "name": "委婉語教室1",
+  "description": "一個學習與練習委婉語的互動式教室，並支援語音對話練習。",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
